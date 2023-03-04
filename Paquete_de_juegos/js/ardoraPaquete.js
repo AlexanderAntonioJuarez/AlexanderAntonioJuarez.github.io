@@ -8,8 +8,8 @@ $("#botonPechar").keydown(function(e){if (e.which!=9){PechaVentana();}});$("#sug
    if (data.getMinutes()<10){horaInicio=data.getHours() +":0"+data.getMinutes()+" h";}
    else{horaInicio=data.getHours() +":"+data.getMinutes()+" h";}
    taboaIntentos=new Array();
-   menuLateral='';
-   menuActividades='';
+   menuLateral='<h1> </h1><a class="lista" href="menuFiles/Alexander_Juarez/Alexander_Juarez.htm"target="_blank">Alexander Juarez</a><a class="lista" href="menuFiles/Melanie_Hernandez/Melanie_Hernandez.htm"target="_blank">Melanie Hernandez</a><a class="lista" href="menuFiles/Mia_Hernandez/Mia_Hernandez.htm"target="_blank">Mia Hernandez</a><a class="lista" href="menuFiles/Cesar_Hernandez/Cesar_Hernandez.htm"target="_blank">Cesar Hernandez</a><a class="lista" href="menuFiles/Ronald_Franco/Ronald_Franco.htm"target="_blank">Ronald Franco</a><a class="lista" href="menuFiles/Sarai_Hernandez/Sarai_Hernandez.htm"target="_blank">Sarai Hernandez</a>';
+   menuActividades='<h1></h1><a href="javascript:irA(0)" title="Alexander Juarez">1 </a><a href="javascript:irA(1)" title="Ronald Franco">2 </a><a href="javascript:irA(2)" title="Melanie Hernandez">3 </a><a href="javascript:irA(3)" title="Cesar Hernandez">4 </a><a href="javascript:irA(4)" title="Sarai Hernandez">5 </a></tr><tr><a href="javascript:irA(5)" title="Mia Hernandez">6 </a>';
    if (window.opener == null){
       indice=0;
       }else{
